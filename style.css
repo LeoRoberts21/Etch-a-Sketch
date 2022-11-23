@@ -1,0 +1,19 @@
+.singleSquare {
+    height: 5vh;
+    width: 5vh;
+    border: solid 2px rgb(7, 7, 7);
+}
+
+.gridContainer10x10 {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+width: 25vh;
+}
+
+.singleSquare:hover {
+    background-color:rgb(7, 7, 7);
+}
+
+.wholePage {
+    width: 100vw;
+}
