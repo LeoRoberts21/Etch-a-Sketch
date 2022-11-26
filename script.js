@@ -1,32 +1,33 @@
-
 //CODE FOR PAINT BRUSH -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
-const fun = document.getElementsByClassName(".singleSquare");
 
-let arrayLength = fun.length;
 
-console.log(arrayLength);
 
-const colorIt = function myFunction() {
-  for (var i = 0; i < 100; i++) {
-    const fun = document.getElementsByClassName(".singleSquare")[1];
-    fun.addEventListener("mouseover", function () {
-      fun.classList.add("hoverColor");
-    });
-  }
+
+//let stickcolour = funftion(){
+  // ss.classlist.add('colour')
+// }
+
+//ss.addevent (mouse over, stick color)
+
+let singleSquare = document.querySelector(".singleSquare");
+
+let stickColour = function () {
+  singleSquare.classList.add("ssHover");
 };
+
+singleSquare.addEventListener("mouseover", stickColour);
 
 
 
 
 //CODE FOR SQUARE CHANGING -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
+const tenTen = document.querySelector(".gridContainer10x10");
 
-const TenTen = document.querySelector(".gridContainer10x10");
+const twentyTwenty = document.querySelector(".gridContainer20x20");
 
-const TwentyTwenty = document.querySelector(".gridContainer20x20");
-
-const ThirtyThirty = document.querySelector(".gridContainer30x30");
+const thirtyThirty = document.querySelector(".gridContainer30x30");
 
 const btnTen = document.querySelector(".btn10");
 
@@ -34,33 +35,26 @@ const btnTwenty = document.querySelector(".btn20");
 
 const btnThirty = document.querySelector(".btn30");
 
-
-
-const openTen = function() {
-    TenTen.classList.remove('hidden');
-    TwentyTwenty.classList.add('hidden');
-    ThirtyThirty.classList.add('hidden');
+const openTen = function () {
+  tenTen.classList.remove("hidden");
+  twentyTwenty.classList.add("hidden");
+  thirtyThirty.classList.add("hidden");
 };
 
-const openTwenty = function() {
-    TenTen.classList.add('hidden');
-    TwentyTwenty.classList.remove('hidden');
-    ThirtyThirty.classList.add('hidden');
+const openTwenty = function () {
+  tenTen.classList.add("hidden");
+  twentyTwenty.classList.remove("hidden");
+  thirtyThirty.classList.add("hidden");
 };
 
-const openThirty = function() {
-    TenTen.classList.add('hidden');
-    TwentyTwenty.classList.add('hidden');
-    ThirtyThirty.classList.remove('hidden');
+const openThirty = function () {
+  tenTen.classList.add("hidden");
+  twentyTwenty.classList.add("hidden");
+  thirtyThirty.classList.remove("hidden");
 };
 
+btnTen.addEventListener("click", openTen);
 
+btnTwenty.addEventListener("click", openTwenty);
 
-btnTen.addEventListener('click', openTen);
-    
-btnTwenty.addEventListener('click', openTwenty);
-
-btnThirty.addEventListener('click', openThirty);
-
-
-
+btnThirty.addEventListener("click", openThirty);
