@@ -1,20 +1,20 @@
 
 //CODE FOR PAINT BRUSH -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
-// const fun = document.getElementsByClassName("singleSquare");
+const fun = document.getElementsByClassName(".singleSquare");
 
-// let arrayLength = fun.length;
+let arrayLength = fun.length;
 
-// console.log(arrayLength);
+console.log(arrayLength);
 
-// const colorIt = function myFunction() {
-//   for (var i = 0; i < 100; i++) {
-//     const fun = document.getElementsByClassName("singleSquare")[56];
-//     fun.addEventListener("mouseover", function () {
-//       fun.classList.add("hoverColor");
-//     });
-//   }
-// };
+const colorIt = function myFunction() {
+  for (var i = 0; i < 100; i++) {
+    const fun = document.getElementsByClassName(".singleSquare")[1];
+    fun.addEventListener("mouseover", function () {
+      fun.classList.add("hoverColor");
+    });
+  }
+};
 
 
 

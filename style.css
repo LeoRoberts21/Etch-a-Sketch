@@ -46,3 +46,17 @@
 .hidden {
   display: none;
 }
+
+.btns {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.btn10, .btn20, .btn30 {
+  height: 50px;
+  width: 100px;
+  background-color: rgb(125, 224, 148);
+  border: solid 2px black;
+}
