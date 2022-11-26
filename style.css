@@ -48,15 +48,23 @@
 }
 
 .btns {
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: center;
   gap: 40px;
 }
 
-.btn10, .btn20, .btn30 {
+.btn10, .btn20, .btn30, .btnClear{
   height: 50px;
   width: 100px;
-  background-color: rgb(125, 224, 148);
+  background-color: rgb(223, 51, 71);
   border: solid 2px black;
+  border-radius: 15px;
+  color: rgb(255, 255, 255);
+}
+
+.btn10:active, .btn20:active, .btn30:active, .btnClear:active{
+
+  background-color: rgb(112, 20, 31);
+
 }
