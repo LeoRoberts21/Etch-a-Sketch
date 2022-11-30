@@ -13,6 +13,7 @@
 .gridContainer10x10 {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
+  color: inherit;
 }
 
 .wholePage {
@@ -77,4 +78,8 @@
 .btn30:active,
 .btnClear:active {
   background-color: rgb(192, 33, 52);
+}
+
+a {
+  color: inherit;
 }

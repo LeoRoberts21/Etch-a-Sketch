@@ -1,25 +1,13 @@
 //CODE FOR PAINT BRUSH -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
+const divs = document.querySelector(".gridContainer10x10");
+const mainDiv = document.querySelector(".singleSquare");
 
-
-
-
-//let stickcolour = funftion(){
-  // ss.classlist.add('colour')
-// }
-
-//ss.addevent (mouse over, stick color)
-
-let singleSquare = document.querySelector(".singleSquare");
-
-let stickColour = function () {
-  singleSquare.classList.add("ssHover");
-};
-
-singleSquare.addEventListener("mouseover", stickColour);
-
-
-
+divs.addEventListener("mouseover", function (e) {
+  if (e.target.matches(".singleSquare")) {
+    e.target.classList.add("ssHover");
+  }
+});
 
 //CODE FOR SQUARE CHANGING -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
