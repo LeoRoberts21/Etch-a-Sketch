@@ -1,16 +1,3 @@
-//CODE FOR PAINT BRUSH -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-
-const divs = document.querySelector(".gridContainer10x10");
-const mainDiv = document.querySelector(".singleSquare");
-
-divs.addEventListener("mouseover", function (e) {
-  if (e.target.matches(".singleSquare")) {
-    e.target.classList.add("ssHover");
-  }
-});
-
-//CODE FOR SQUARE CHANGING -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-
 const tenTen = document.querySelector(".gridContainer10x10");
 
 const twentyTwenty = document.querySelector(".gridContainer20x20");
@@ -22,6 +9,30 @@ const btnTen = document.querySelector(".btn10");
 const btnTwenty = document.querySelector(".btn20");
 
 const btnThirty = document.querySelector(".btn30");
+
+//CODE FOR PAINT BRUSH -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+tenTen.addEventListener("mouseover", function (e) {
+  if (e.target.matches(".singleSquare")) {
+    e.target.classList.add("ssHover");
+  }
+});
+
+twentyTwenty.addEventListener("mouseover", function (e) {
+  if (e.target.matches(".singleSquare2")) {
+    e.target.classList.add("ssHover");
+  }
+});
+
+thirtyThirty.addEventListener("mouseover", function (e) {
+  if (e.target.matches(".singleSquare3")) {
+    e.target.classList.add("ssHover");
+  }
+});
+
+
+
+//CODE FOR SQUARE CHANGING -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
 const openTen = function () {
   tenTen.classList.remove("hidden");
