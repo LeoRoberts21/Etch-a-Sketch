@@ -36,6 +36,11 @@ thirtyThirty.addEventListener("mouseover", function (e) {
 
 //CLEAR BUTTON -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
+function clearCanvas() {
+  tenTen.classList.add('reset');
+}
+btnClear.addEventListener("click", clearCanvas());
+
 //CODE FOR SQUARE CHANGING -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
 const openTen = function () {

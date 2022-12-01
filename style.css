@@ -65,7 +65,7 @@
 .btnClear {
   height: 50px;
   width: 100px;
-  background-color: rgb(223, 51, 71);
+  background-color: rgb(0, 0, 0);
   border: solid 2px black;
   border-radius: 15px;
   color: rgb(255, 255, 255);
@@ -75,13 +75,12 @@
 .btn20:active,
 .btn30:active,
 .btnClear:active {
-  background-color: rgb(192, 33, 52);
+  background-color: rgb(57, 57, 57);
 }
 
 a {
   color: inherit;
 }
-
 
 .reset {
   background-color: white;
