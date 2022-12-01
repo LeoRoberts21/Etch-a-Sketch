@@ -8,8 +8,6 @@
   background-color: rgb(0, 0, 0);
 }
 
-
-
 .gridContainer10x10 {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
@@ -82,4 +80,9 @@
 
 a {
   color: inherit;
+}
+
+
+.reset {
+  background-color: white;
 }

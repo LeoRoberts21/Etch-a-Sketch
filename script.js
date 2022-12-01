@@ -10,6 +10,10 @@ const btnTwenty = document.querySelector(".btn20");
 
 const btnThirty = document.querySelector(".btn30");
 
+const btnClear = document.querySelector(".btnClear");
+
+const singleS = document.querySelector(".singleSquare");
+
 //CODE FOR PAINT BRUSH -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 tenTen.addEventListener("mouseover", function (e) {
@@ -30,7 +34,7 @@ thirtyThirty.addEventListener("mouseover", function (e) {
   }
 });
 
-
+//CLEAR BUTTON -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
 //CODE FOR SQUARE CHANGING -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
